@@ -1,0 +1,26 @@
+@import "../_snowpack/pkg/tailwindcss/dist/base.css";
+@import "../_snowpack/pkg/tailwindcss/dist/components.css";
+@import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+.imagen-acomodo {
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: 150px;
+}
+
+.texto-acomodo {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(2, 126, 49);
+    float: left;
+    width: 250px
+}
+
+.texto-acomodo-price {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(141, 9, 0);
+    float: left;
+    width: 250px;
+    color: gray;
+}
