@@ -1,13 +1,15 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
-
 const baseUrl = "https://platzi-avo.vercel.app";
 const url = "https://platzi-avo.vercel.app/api/avo";
-const appNode = document.querySelector('#app');
-const formatPrice = (price) => {
+const appNode = document.querySelector("#app");
 
+
+appNode.addEventListener("click", (event) => {
+    if (event.target.nodeName === "H2") {
+        window.alert("Has hecho click");
+    }
+});
+
+const formatPrice = (price) => {
         const newPrice = new window.Intl.NumberFormat("en-ES", {
             style: "currency",
             currency: "MXN",
@@ -40,6 +42,7 @@ window
             title.textContent = item.name;
             imagen.src = `${baseUrl}${item.image}`;
             title.className = "texto-acomodo";
+
 
             //crear precio
             const price = document.createElement("div");
